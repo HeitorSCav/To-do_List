@@ -57,3 +57,57 @@ def listar_tarefas():
     for tarefa in tarefas:
         status = "Concluída" if tarefa["concluida"] else "Pendente"
         print(f" {tarefa['id']} | {tarefa['titulo']} | Status: {status}")
+
+
+'''
+Função para concluir uma tarefa com base no ID fornecido.
+Parâmetros:
+    - id (int): ID da tarefa a ser concluída
+Retorno:
+    - Nenhum
+'''
+def concluir_tarefa(id):
+    tarefas = carregar_arquivo()
+
+    if tarefas == []:
+        print("\n**Nenhuma tarefa encontrada.**\n")
+        return
+    
+    for tarefa in tarefas:
+        # Busca pelo ID
+        if tarefa["id"] == id:
+            if tarefa["concluida"]:
+                print("\n**Essa tarefa já está concluída.**\n")
+                return
+            else:
+                tarefa["concluida"] = True
+                salvar_arquivo(tarefas)
+                print("\n**Tarefa marcada como concluída!**\n")
+                return
+            
+    print("\n**Tarefa com ID fornecido não encontrada.**\n")
+
+
+'''
+Função para excluir uma tarefa com base no ID fornecido.
+Parâmetros:
+    - id (int): ID da tarefa a ser excluída
+Retorno:
+    - Nenhum
+'''
+def excluir_tarefa(id):
+    tarefas = carregar_arquivo()
+
+    if tarefas == []:
+        print("\n**Nenhuma tarefa encontrada.**\n")
+        return
+    
+    for tarefa in tarefas:
+        # Busca pelo ID
+        if tarefa["id"] == id:
+            tarefas.remove(tarefa)
+            salvar_arquivo(tarefas)
+            print("\n**Tarefa excluída com sucesso!**\n")
+            return
+            
+    print("\n**Tarefa com ID fornecido não encontrada.**\n")
