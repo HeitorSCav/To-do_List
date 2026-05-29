@@ -37,3 +37,23 @@ def adicionar_tarefa(titulo):
     tarefas.append(nova_tarefa)
     salvar_arquivo(tarefas)
     print("\n**Tarefa adicionada com sucesso!**\n")
+
+
+'''
+Função para listar todas as tarefas.
+Parâmetros:
+    - Nenhum
+Retorno:
+    - Nenhum (imprime as tarefas no console)
+'''
+def listar_tarefas():
+    tarefas = carregar_arquivo()
+
+    if tarefas == []:
+        print("\n**Nenhuma tarefa encontrada.**\n")
+        return
+    
+    print("\nTarefas:")
+    for tarefa in tarefas:
+        status = "Concluída" if tarefa["concluida"] else "Pendente"
+        print(f" {tarefa['id']} | {tarefa['titulo']} | Status: {status}")
