@@ -15,7 +15,8 @@ while True:
     opcao = input("Escolha: ")
 
     if opcao == "1":
-        adicionar_tarefa()
+        titulo = input("Título da tarefa: ")
+        adicionar_tarefa(titulo)
     elif opcao == "2":
         listar_tarefas()
     elif opcao == "3":
