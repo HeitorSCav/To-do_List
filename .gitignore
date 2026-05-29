@@ -28,4 +28,4 @@ Thumbs.db
 .env
 
 # Project data files
-tasks.json
+myTasks.json
