@@ -1,6 +1,17 @@
 # Projeto TO-DO List
 
 from storage import carregar_arquivo, salvar_arquivo
+import os
+
+
+# UTILIDADES
+def limpar_tela():
+    os.system("cls" if os.name == "nt" else "clear")
+
+
+def pausar():
+    input("\nPressione ENTER para continuar...")
+
 
 # LÓGICA
 
