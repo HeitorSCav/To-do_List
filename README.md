@@ -33,7 +33,7 @@ cd nome-do-projeto
 3. Execute o programa:
 
 ```bash
-python to_do_list.py
+python3 to_do_list.py
 ```
 
 ## Como utilizar
