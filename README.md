@@ -1,61 +1,59 @@
-# TO-DO List
+# 🗒️ TO-DO List
 
-Projeto desenvolvido em Python com o objetivo de praticar versionamento de código utilizando Git e GitHub.
+Project developed in **Python** with the goal of practicing code version control using **Git and GitHub**.
 
-## Funcionalidades
+## Features
 
-* Adicionar tarefas
-* Listar tarefas
-* Concluir tarefas
-* Excluir tarefas
-* Armazenamento das tarefas em arquivo JSON
+* Add tasks
+* List tasks
+* Complete tasks
+* Delete tasks
+* Store tasks in a JSON file
 
-## Como executar
+## How to Run
 
-### Pré-requisitos
+### Prerequisites
 
-* Python 3 instalado na máquina
+* Python 3 installed on your machine
 
-### Passos
+### Steps
 
-1. Clone o repositório:
-
-```bash
-git clone <url-do-repositorio>
-```
-
-2. Entre na pasta do projeto:
+1. Clone the repository:
 
 ```bash
-cd nome-do-projeto
+git clone <repository-url>
 ```
 
-3. Execute o programa:
+2. Navigate to the project folder:
+```bash
+cd project-name
+```
 
+3. Run the program:
 ```bash
 python3 to_do_list.py
 ```
 
-## Como utilizar
+### How to Use
 
-Ao iniciar o programa, será exibido um menu com as opções:
-
+When the program starts, a menu with the following options will be displayed:
 ```text
-1 - Adicionar tarefa
-2 - Listar tarefas
-3 - Concluir tarefa
-4 - Excluir tarefa
-0 - Sair
+1 - Add task
+2 - List tasks
+3 - Complete task
+4 - Delete task
+0 - Exit
 ```
 
-Selecione a opção desejada e siga as instruções exibidas no terminal.
+Select the desired option and follow the instructions displayed in the terminal.
 
-## Estrutura do Projeto
 
-* `to_do_list.py` — menu principal e interação com o usuário.
-* `tasks.py` — funções relacionadas ao gerenciamento das tarefas.
-* `tasks.json` — armazenamento das tarefas criadas.
+### Project Structure
 
----
+* `to_do_list.py` — main menu and user interaction.
+* `tasks.py` — functions related to task management.
+* `tasks.json` — storage for created tasks.
 
-Developed by **HeitorSCav**
+-------
+
+Developed by HeitorSCav
